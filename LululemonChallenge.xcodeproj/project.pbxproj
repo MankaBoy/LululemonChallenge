@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		689617052A12BAB500EDFEC7 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689617042A12BAB500EDFEC7 /* EditItemViewController.swift */; };
+		6896170A2A12C9F600EDFEC7 /* EditItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */; };
+		689746812A0EB8A200ECCFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746802A0EB8A200ECCFCC /* AppDelegate.swift */; };
+		689746832A0EB8A200ECCFCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746822A0EB8A200ECCFCC /* SceneDelegate.swift */; };
+		689746852A0EB8A200ECCFCC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746842A0EB8A200ECCFCC /* MainViewController.swift */; };
+		689746882A0EB8A200ECCFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689746862A0EB8A200ECCFCC /* Main.storyboard */; };
+		6897468B2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 689746892A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld */; };
+		6897468D2A0EB8AD00ECCFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6897468C2A0EB8AD00ECCFCC /* Assets.xcassets */; };
+		689746902A0EB8AD00ECCFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6897468E2A0EB8AD00ECCFCC /* LaunchScreen.storyboard */; };
+		6897469B2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897469A2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift */; };
+		689746A62A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746A52A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift */; };
+		689746C12A0EC16200ECCFCC /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */; };
+		689746D72A0ED07900ECCFCC /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */; };
+		689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */; };
+		689746F52A0EE1E100ECCFCC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746F42A0EE1E100ECCFCC /* APIService.swift */; };
+		689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		689746972A0EB8AF00ECCFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689746752A0EB8A200ECCFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6897467C2A0EB8A200ECCFCC;
+			remoteInfo = LululemonChallenge;
+		};
+		689746A22A0EB8AF00ECCFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689746752A0EB8A200ECCFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6897467C2A0EB8A200ECCFCC;
+			remoteInfo = LululemonChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		689617042A12BAB500EDFEC7 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewModel.swift; sourceTree = "<group>"; };
+		6897467D2A0EB8A200ECCFCC /* LululemonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LululemonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		689746802A0EB8A200ECCFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		689746822A0EB8A200ECCFCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		689746842A0EB8A200ECCFCC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		689746872A0EB8A200ECCFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6897468A2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LululemonChallenge.xcdatamodel; sourceTree = "<group>"; };
+		6897468C2A0EB8AD00ECCFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6897468F2A0EB8AD00ECCFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		689746912A0EB8AD00ECCFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689746962A0EB8AF00ECCFCC /* LululemonChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LululemonChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6897469A2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonChallengeTests.swift; sourceTree = "<group>"; };
+		6897469C2A0EB8AF00ECCFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689746A12A0EB8AF00ECCFCC /* LululemonChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LululemonChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		689746A52A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonChallengeUITests.swift; sourceTree = "<group>"; };
+		689746A72A0EB8AF00ECCFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		689746F42A0EE1E100ECCFCC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6897467A2A0EB8A200ECCFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689746932A0EB8AF00ECCFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6897469E2A0EB8AF00ECCFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		689746742A0EB8A200ECCFCC = {
+			isa = PBXGroup;
+			children = (
+				6897467F2A0EB8A200ECCFCC /* LululemonChallenge */,
+				689746992A0EB8AF00ECCFCC /* LululemonChallengeTests */,
+				689746A42A0EB8AF00ECCFCC /* LululemonChallengeUITests */,
+				6897467E2A0EB8A200ECCFCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6897467E2A0EB8A200ECCFCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6897467D2A0EB8A200ECCFCC /* LululemonChallenge.app */,
+				689746962A0EB8AF00ECCFCC /* LululemonChallengeTests.xctest */,
+				689746A12A0EB8AF00ECCFCC /* LululemonChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6897467F2A0EB8A200ECCFCC /* LululemonChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				689746F32A0EE1C900ECCFCC /* API Manager */,
+				689746E62A0EDC1700ECCFCC /* DBManager */,
+				689746EF2A0EDDDF00ECCFCC /* App&SceneDelegates */,
+				689746BC2A0EC13900ECCFCC /* ViewControllers */,
+				689746BB2A0EC10C00ECCFCC /* StoryBoards */,
+				6897468C2A0EB8AD00ECCFCC /* Assets.xcassets */,
+				689746912A0EB8AD00ECCFCC /* Info.plist */,
+				689746892A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld */,
+				689746C52A0EC29000ECCFCC /* ViewModels */,
+			);
+			path = LululemonChallenge;
+			sourceTree = "<group>";
+		};
+		689746992A0EB8AF00ECCFCC /* LululemonChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6897469A2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift */,
+				6897469C2A0EB8AF00ECCFCC /* Info.plist */,
+			);
+			path = LululemonChallengeTests;
+			sourceTree = "<group>";
+		};
+		689746A42A0EB8AF00ECCFCC /* LululemonChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				689746A52A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift */,
+				689746A72A0EB8AF00ECCFCC /* Info.plist */,
+			);
+			path = LululemonChallengeUITests;
+			sourceTree = "<group>";
+		};
+		689746BB2A0EC10C00ECCFCC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6897468E2A0EB8AD00ECCFCC /* LaunchScreen.storyboard */,
+				689746862A0EB8A200ECCFCC /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		689746BC2A0EC13900ECCFCC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				689746842A0EB8A200ECCFCC /* MainViewController.swift */,
+				689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */,
+				689617042A12BAB500EDFEC7 /* EditItemViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		689746C52A0EC29000ECCFCC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */,
+				689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */,
+				689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		689746E62A0EDC1700ECCFCC /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		689746EF2A0EDDDF00ECCFCC /* App&SceneDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				689746802A0EB8A200ECCFCC /* AppDelegate.swift */,
+				689746822A0EB8A200ECCFCC /* SceneDelegate.swift */,
+			);
+			path = "App&SceneDelegates";
+			sourceTree = "<group>";
+		};
+		689746F32A0EE1C900ECCFCC /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				689746F42A0EE1E100ECCFCC /* APIService.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6897467C2A0EB8A200ECCFCC /* LululemonChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689746AA2A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallenge" */;
+			buildPhases = (
+				689746792A0EB8A200ECCFCC /* Sources */,
+				6897467A2A0EB8A200ECCFCC /* Frameworks */,
+				6897467B2A0EB8A200ECCFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LululemonChallenge;
+			productName = LululemonChallenge;
+			productReference = 6897467D2A0EB8A200ECCFCC /* LululemonChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		689746952A0EB8AF00ECCFCC /* LululemonChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689746AD2A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallengeTests" */;
+			buildPhases = (
+				689746922A0EB8AF00ECCFCC /* Sources */,
+				689746932A0EB8AF00ECCFCC /* Frameworks */,
+				689746942A0EB8AF00ECCFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689746982A0EB8AF00ECCFCC /* PBXTargetDependency */,
+			);
+			name = LululemonChallengeTests;
+			productName = LululemonChallengeTests;
+			productReference = 689746962A0EB8AF00ECCFCC /* LululemonChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		689746A02A0EB8AF00ECCFCC /* LululemonChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689746B02A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallengeUITests" */;
+			buildPhases = (
+				6897469D2A0EB8AF00ECCFCC /* Sources */,
+				6897469E2A0EB8AF00ECCFCC /* Frameworks */,
+				6897469F2A0EB8AF00ECCFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689746A32A0EB8AF00ECCFCC /* PBXTargetDependency */,
+			);
+			name = LululemonChallengeUITests;
+			productName = LululemonChallengeUITests;
+			productReference = 689746A12A0EB8AF00ECCFCC /* LululemonChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		689746752A0EB8A200ECCFCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					6897467C2A0EB8A200ECCFCC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					689746952A0EB8AF00ECCFCC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 6897467C2A0EB8A200ECCFCC;
+					};
+					689746A02A0EB8AF00ECCFCC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 6897467C2A0EB8A200ECCFCC;
+					};
+				};
+			};
+			buildConfigurationList = 689746782A0EB8A200ECCFCC /* Build configuration list for PBXProject "LululemonChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 689746742A0EB8A200ECCFCC;
+			productRefGroup = 6897467E2A0EB8A200ECCFCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6897467C2A0EB8A200ECCFCC /* LululemonChallenge */,
+				689746952A0EB8AF00ECCFCC /* LululemonChallengeTests */,
+				689746A02A0EB8AF00ECCFCC /* LululemonChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6897467B2A0EB8A200ECCFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689746902A0EB8AD00ECCFCC /* LaunchScreen.storyboard in Resources */,
+				6897468D2A0EB8AD00ECCFCC /* Assets.xcassets in Resources */,
+				689746882A0EB8A200ECCFCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689746942A0EB8AF00ECCFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6897469F2A0EB8AF00ECCFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		689746792A0EB8A200ECCFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689746C12A0EC16200ECCFCC /* ItemsViewModel.swift in Sources */,
+				689746852A0EB8A200ECCFCC /* MainViewController.swift in Sources */,
+				689746D72A0ED07900ECCFCC /* AddNewItemViewController.swift in Sources */,
+				6896170A2A12C9F600EDFEC7 /* EditItemViewModel.swift in Sources */,
+				689746812A0EB8A200ECCFCC /* AppDelegate.swift in Sources */,
+				689746832A0EB8A200ECCFCC /* SceneDelegate.swift in Sources */,
+				6897468B2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld in Sources */,
+				689746F52A0EE1E100ECCFCC /* APIService.swift in Sources */,
+				689617052A12BAB500EDFEC7 /* EditItemViewController.swift in Sources */,
+				689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */,
+				689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689746922A0EB8AF00ECCFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6897469B2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6897469D2A0EB8AF00ECCFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689746A62A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		689746982A0EB8AF00ECCFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6897467C2A0EB8A200ECCFCC /* LululemonChallenge */;
+			targetProxy = 689746972A0EB8AF00ECCFCC /* PBXContainerItemProxy */;
+		};
+		689746A32A0EB8AF00ECCFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6897467C2A0EB8A200ECCFCC /* LululemonChallenge */;
+			targetProxy = 689746A22A0EB8AF00ECCFCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		689746862A0EB8A200ECCFCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				689746872A0EB8A200ECCFCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6897468E2A0EB8AD00ECCFCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6897468F2A0EB8AD00ECCFCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		689746A82A0EB8AF00ECCFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		689746A92A0EB8AF00ECCFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		689746AB2A0EB8AF00ECCFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		689746AC2A0EB8AF00ECCFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		689746AE2A0EB8AF00ECCFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LululemonChallenge.app/LululemonChallenge";
+			};
+			name = Debug;
+		};
+		689746AF2A0EB8AF00ECCFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LululemonChallenge.app/LululemonChallenge";
+			};
+			name = Release;
+		};
+		689746B12A0EB8AF00ECCFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LululemonChallenge;
+			};
+			name = Debug;
+		};
+		689746B22A0EB8AF00ECCFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LululemonChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ali-Noor.LululemonChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LululemonChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		689746782A0EB8A200ECCFCC /* Build configuration list for PBXProject "LululemonChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689746A82A0EB8AF00ECCFCC /* Debug */,
+				689746A92A0EB8AF00ECCFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689746AA2A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689746AB2A0EB8AF00ECCFCC /* Debug */,
+				689746AC2A0EB8AF00ECCFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689746AD2A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689746AE2A0EB8AF00ECCFCC /* Debug */,
+				689746AF2A0EB8AF00ECCFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689746B02A0EB8AF00ECCFCC /* Build configuration list for PBXNativeTarget "LululemonChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689746B12A0EB8AF00ECCFCC /* Debug */,
+				689746B22A0EB8AF00ECCFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		689746892A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6897468A2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodel */,
+			);
+			currentVersion = 6897468A2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodel */;
+			path = LululemonChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 689746752A0EB8A200ECCFCC /* Project object */;
+}
