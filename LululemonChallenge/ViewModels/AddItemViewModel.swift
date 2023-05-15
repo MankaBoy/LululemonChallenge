@@ -7,8 +7,8 @@
 
 import Foundation
 class AddItemViewModel {
-    let apiService = APIService.shared
+    let dbManager = DataBaseManager.shared
     func saveDataToCoreData(name: String) {
-        apiService.saveItem(name: name)
+        dbManager.saveItem(name: name)
     }
 }

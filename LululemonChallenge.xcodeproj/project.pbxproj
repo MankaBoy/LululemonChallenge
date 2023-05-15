@@ -21,7 +21,6 @@
 		689746C12A0EC16200ECCFCC /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */; };
 		689746D72A0ED07900ECCFCC /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */; };
 		689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */; };
-		689746F52A0EE1E100ECCFCC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746F42A0EE1E100ECCFCC /* APIService.swift */; };
 		689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		689746F42A0EE1E100ECCFCC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,15 +113,14 @@
 		6897467F2A0EB8A200ECCFCC /* LululemonChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				689746F32A0EE1C900ECCFCC /* API Manager */,
 				689746E62A0EDC1700ECCFCC /* DBManager */,
 				689746EF2A0EDDDF00ECCFCC /* App&SceneDelegates */,
 				689746BC2A0EC13900ECCFCC /* ViewControllers */,
+				689746C52A0EC29000ECCFCC /* ViewModels */,
 				689746BB2A0EC10C00ECCFCC /* StoryBoards */,
 				6897468C2A0EB8AD00ECCFCC /* Assets.xcassets */,
 				689746912A0EB8AD00ECCFCC /* Info.plist */,
 				689746892A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld */,
-				689746C52A0EC29000ECCFCC /* ViewModels */,
 			);
 			path = LululemonChallenge;
 			sourceTree = "<group>";
@@ -190,14 +187,6 @@
 				689746822A0EB8A200ECCFCC /* SceneDelegate.swift */,
 			);
 			path = "App&SceneDelegates";
-			sourceTree = "<group>";
-		};
-		689746F32A0EE1C900ECCFCC /* API Manager */ = {
-			isa = PBXGroup;
-			children = (
-				689746F42A0EE1E100ECCFCC /* APIService.swift */,
-			);
-			path = "API Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +326,6 @@
 				689746812A0EB8A200ECCFCC /* AppDelegate.swift in Sources */,
 				689746832A0EB8A200ECCFCC /* SceneDelegate.swift in Sources */,
 				6897468B2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld in Sources */,
-				689746F52A0EE1E100ECCFCC /* APIService.swift in Sources */,
 				689617052A12BAB500EDFEC7 /* EditItemViewController.swift in Sources */,
 				689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */,
 				689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */,

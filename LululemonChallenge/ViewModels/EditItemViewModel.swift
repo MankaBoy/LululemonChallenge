@@ -6,9 +6,8 @@
 //
 
 class EditItemViewModel {
-    let apiShared = APIService.shared
-    
+    let dbManager = DataBaseManager.shared
     func editItem(item: Item, newName: String) {
-        apiShared.editItem(item: item, newName: newName)
+        dbManager.editItem(item: item, newName: newName)
     }
 }

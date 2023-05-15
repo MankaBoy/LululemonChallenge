@@ -5,12 +5,9 @@
 //  Created by Noor Ali on 5/12/23.
 //
 import Foundation
-struct  Items {
-    var name:String
-}
 class ItemsViewModel {
     var items: [Item] = []
-    let apiService = APIService.shared
+    let dbManager =  DataBaseManager.shared
     
     func fetchDataFromDatabase(sortIndex: Int) {
         // define sort rule
@@ -24,13 +21,9 @@ class ItemsViewModel {
         default:
             break
         }
-        
-        apiService.fetchDataFromCoreDataBase(sort: sort) { items in
-            self.items = items
-        }
+        self.items = dbManager.fetchItems(sort: sort)
     }
-    
-    
+
     func getItemsCount() -> Int {
         return items.count
     }
@@ -40,7 +33,7 @@ class ItemsViewModel {
     }
     
     func deleteItemAtIndex(item: Item) {
-        apiService.deleteItem(item: item)
+        dbManager.deleteItem(item: item)
     }
 }
 
