@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		689617052A12BAB500EDFEC7 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689617042A12BAB500EDFEC7 /* EditItemViewController.swift */; };
-		6896170A2A12C9F600EDFEC7 /* EditItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */; };
+		689617052A12BAB500EDFEC7 /* AddOrEditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689617042A12BAB500EDFEC7 /* AddOrEditItemViewController.swift */; };
 		689746812A0EB8A200ECCFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746802A0EB8A200ECCFCC /* AppDelegate.swift */; };
 		689746832A0EB8A200ECCFCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746822A0EB8A200ECCFCC /* SceneDelegate.swift */; };
 		689746852A0EB8A200ECCFCC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746842A0EB8A200ECCFCC /* MainViewController.swift */; };
@@ -19,9 +18,8 @@
 		6897469B2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897469A2A0EB8AF00ECCFCC /* LululemonChallengeTests.swift */; };
 		689746A62A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746A52A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift */; };
 		689746C12A0EC16200ECCFCC /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */; };
-		689746D72A0ED07900ECCFCC /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */; };
 		689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */; };
-		689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */; };
+		689747002A0EEC0E00ECCFCC /* AddAndItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689746FF2A0EEC0E00ECCFCC /* AddAndItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		689617042A12BAB500EDFEC7 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
-		689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewModel.swift; sourceTree = "<group>"; };
+		689617042A12BAB500EDFEC7 /* AddOrEditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditItemViewController.swift; sourceTree = "<group>"; };
 		6897467D2A0EB8A200ECCFCC /* LululemonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LululemonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689746802A0EB8A200ECCFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689746822A0EB8A200ECCFCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +57,8 @@
 		689746A52A0EB8AF00ECCFCC /* LululemonChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonChallengeUITests.swift; sourceTree = "<group>"; };
 		689746A72A0EB8AF00ECCFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
-		689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		689746E72A0EDC4000ECCFCC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewModel.swift; sourceTree = "<group>"; };
+		689746FF2A0EEC0E00ECCFCC /* AddAndItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				689746842A0EB8A200ECCFCC /* MainViewController.swift */,
-				689746D62A0ED07900ECCFCC /* AddNewItemViewController.swift */,
-				689617042A12BAB500EDFEC7 /* EditItemViewController.swift */,
+				689617042A12BAB500EDFEC7 /* AddOrEditItemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,8 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				689746C02A0EC16200ECCFCC /* ItemsViewModel.swift */,
-				689746FF2A0EEC0E00ECCFCC /* AddItemViewModel.swift */,
-				689617092A12C9F600EDFEC7 /* EditItemViewModel.swift */,
+				689746FF2A0EEC0E00ECCFCC /* AddAndItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -321,13 +315,11 @@
 			files = (
 				689746C12A0EC16200ECCFCC /* ItemsViewModel.swift in Sources */,
 				689746852A0EB8A200ECCFCC /* MainViewController.swift in Sources */,
-				689746D72A0ED07900ECCFCC /* AddNewItemViewController.swift in Sources */,
-				6896170A2A12C9F600EDFEC7 /* EditItemViewModel.swift in Sources */,
 				689746812A0EB8A200ECCFCC /* AppDelegate.swift in Sources */,
 				689746832A0EB8A200ECCFCC /* SceneDelegate.swift in Sources */,
 				6897468B2A0EB8A200ECCFCC /* LululemonChallenge.xcdatamodeld in Sources */,
-				689617052A12BAB500EDFEC7 /* EditItemViewController.swift in Sources */,
-				689747002A0EEC0E00ECCFCC /* AddItemViewModel.swift in Sources */,
+				689617052A12BAB500EDFEC7 /* AddOrEditItemViewController.swift in Sources */,
+				689747002A0EEC0E00ECCFCC /* AddAndItemViewModel.swift in Sources */,
 				689746E82A0EDC4000ECCFCC /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

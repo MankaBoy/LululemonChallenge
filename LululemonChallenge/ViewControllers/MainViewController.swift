@@ -6,6 +6,10 @@
 //
 
 import UIKit
+enum ActionType {
+    case addType
+    case editType
+}
 
 class ViewController: UIViewController {
     @IBOutlet weak var tblView:
@@ -24,14 +28,8 @@ class ViewController: UIViewController {
     }
 
     @objc func navigateToAddNewItemVC() {
-        let st = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = st.instantiateViewController(identifier: "AddNewItemViewController") as! AddNewItemViewController
-        vc.completionHandler = {
-            self.fetchDataReload()
-        }
-        self.present(vc, animated: true)
+        moveToController()
     }
-        
     
     @IBAction func segmnetedControlAction(_ sender: UISegmentedControl) {
         fetchDataReload()
@@ -48,7 +46,6 @@ class ViewController: UIViewController {
             self.tblView.reloadData()
         }
     }
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -75,13 +72,23 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = viewModel.getItemAtIndex(index: indexPath.row)
+        moveToController(item: item)
+    }
+    
+    func moveToController(item: Item? = nil) {
         let st = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = st.instantiateViewController(withIdentifier: "EditItemViewController") as! EditItemViewController
+        let vc = st.instantiateViewController(withIdentifier: "AddOrEditItemViewController") as! AddOrEditItemViewController
+        if let item = item {
+            vc.selectedItem = item
+            vc.actionType = ActionType.editType
+        }
+        else {
+            vc.actionType = ActionType.addType
+        }
         vc.completionHandler = {
             self.fetchDataReload()
         }
-        vc.itemName = viewModel.getItemAtIndex(index: indexPath.row)?.name
-        vc.item = viewModel.getItemAtIndex(index: indexPath.row)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

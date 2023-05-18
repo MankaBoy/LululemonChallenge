@@ -63,69 +63,10 @@
             </objects>
             <point key="canvasLocation" x="844.92753623188412" y="77.678571428571431"/>
         </scene>
-        <!--Add New Item View Controller-->
-        <scene sceneID="b6c-Vn-5M0">
-            <objects>
-                <viewController storyboardIdentifier="AddNewItemViewController" id="nZU-6w-32P" customClass="AddNewItemViewController" customModule="LululemonChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BnB-ZM-9cJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garment Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dc-4V-JYO">
-                                <rect key="frame" x="20" y="5" width="374" height="172"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmK-PB-EIC">
-                                <rect key="frame" x="10" y="212" width="384" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="f0X-cW-U9T"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-e1-FjN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="ADD" id="tDy-1D-nJv">
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="O5J-Pa-Fjo">
-                                            <connections>
-                                                <action selector="saveItemButtonAction:" destination="nZU-6w-32P" id="Gsc-OC-ewc"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bzl-ge-Nnt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bzl-ge-Nnt" firstAttribute="trailing" secondItem="0Dc-4V-JYO" secondAttribute="trailing" constant="20" id="4bi-b7-m1j"/>
-                            <constraint firstItem="lmK-PB-EIC" firstAttribute="leading" secondItem="bzl-ge-Nnt" secondAttribute="leading" constant="10" id="7Eg-SH-8K1"/>
-                            <constraint firstItem="BlT-e1-FjN" firstAttribute="top" secondItem="BnB-ZM-9cJ" secondAttribute="top" id="C47-WF-KvN"/>
-                            <constraint firstItem="0Dc-4V-JYO" firstAttribute="leading" secondItem="bzl-ge-Nnt" secondAttribute="leading" constant="20" id="F7S-XL-Gsw"/>
-                            <constraint firstItem="0Dc-4V-JYO" firstAttribute="top" secondItem="BlT-e1-FjN" secondAttribute="top" constant="5" id="OVT-jM-uSB"/>
-                            <constraint firstItem="lmK-PB-EIC" firstAttribute="top" secondItem="0Dc-4V-JYO" secondAttribute="bottom" constant="35" id="REy-pW-5wh"/>
-                            <constraint firstItem="BlT-e1-FjN" firstAttribute="trailing" secondItem="bzl-ge-Nnt" secondAttribute="trailing" id="Tfj-hx-b8Y"/>
-                            <constraint firstItem="BlT-e1-FjN" firstAttribute="leading" secondItem="bzl-ge-Nnt" secondAttribute="leading" id="rZe-yS-VHc"/>
-                            <constraint firstItem="bzl-ge-Nnt" firstAttribute="bottom" secondItem="lmK-PB-EIC" secondAttribute="bottom" constant="500" id="tWv-Vf-3mK"/>
-                            <constraint firstItem="bzl-ge-Nnt" firstAttribute="trailing" secondItem="lmK-PB-EIC" secondAttribute="trailing" constant="20" id="ujg-Qe-2lj"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="garmentName" destination="0Dc-4V-JYO" id="Udw-yg-jdo"/>
-                        <outlet property="itemNameTextField" destination="lmK-PB-EIC" id="V3G-ne-YPS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Whp-tU-mRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="89.732142857142847"/>
-        </scene>
-        <!--Edit Item View Controller-->
+        <!--Add Or Edit Item View Controller-->
         <scene sceneID="4pr-br-dXg">
             <objects>
-                <viewController storyboardIdentifier="EditItemViewController" id="otT-Qu-Jvf" customClass="EditItemViewController" customModule="LululemonChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddOrEditItemViewController" id="otT-Qu-Jvf" customClass="AddOrEditItemViewController" customModule="LululemonChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h4E-Z5-s6x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wga-U5-HJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="90"/>
+            <point key="canvasLocation" x="2099" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lGf-YE-fmh">
